@@ -1,0 +1,34 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+body{
+    font-family: cursive Arial, Helvetica, sans-serif;
+}
+.imgBg{
+    background: url('./assets/home-bg.jpg') no-repeat center center /cover;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+}
+.imgBg h1{
+    z-index: 6;
+}
+.imgBg a{
+    z-index: 6;
+}
+.imgBg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.5;
+    z-index: 3;
+}
